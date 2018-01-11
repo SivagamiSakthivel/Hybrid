@@ -12,7 +12,7 @@ public class AbstractTest {
 
     private static OmniFullfillmentPage omniFullfillmentPage;
     Screen screen=new Screen();
-    AutoItX x = new AutoItX();
+
     Pattern imageProjectscreen = new Pattern(System.getProperty("user.dir") + "\\src\\main\\java\\ItemInquiry\\Images\\Projectmyscreen.png");
     Pattern imageprojectmyscreenmax = new Pattern(System.getProperty("user.dir") + "\\src\\main\\java\\ItemInquiry\\Images\\Projectmyscreenmax.png");
     Pattern imageOmniFullfillmentIcon = new Pattern(System.getProperty("user.dir") + "\\src\\main\\java\\Repository\\OmniFullfillment\\OmniFullfillmentLogo.png");
@@ -61,6 +61,7 @@ public class AbstractTest {
      */
     public void clickUsingAutoIT()
     {
+        AutoItX x = new AutoItX();
         x.winWaitActive("Project My Screen App");
         x.mouseClick("left", 819, 617, 1, 1);
         x.mouseUp("left");
@@ -95,7 +96,7 @@ public class AbstractTest {
     }
     /* Close App With Auto It Script  **/
     public void CloseApp_AutoIT() throws IOException {
-
+        AutoItX x = new AutoItX();
         x.winWaitActive("Project My Screen App");
         x.mouseClick("left", 753, 228, 1, 1);
         x.mouseUp("left");
