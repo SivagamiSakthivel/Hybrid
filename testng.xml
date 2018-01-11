@@ -3,7 +3,9 @@
 <suite name="Suite">
   <test  name="Test">
     <classes>
-
+      <class name="TestCases_Demo_Sikuli_AutoIT.OmniFullfillment.OmniFullFillmentValidations"/>
+      <class name="TestCases_Demo_Sikuli_AutoIT.OmniFullfillment.TC_02_OmniFullfillment_WorkLoad_Validations"/>
+      <class name="TestCases_Demo_Sikuli_AutoIT.OmniFullfillment.TC_03_OmniFullfillment_SearchPage_Validations"/>
     </classes>
   </test>
 </suite>
